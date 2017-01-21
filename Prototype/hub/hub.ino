@@ -25,7 +25,7 @@ byte lastSeq = 0;
 
 // Radio driver.
 // RH_ASK(speed, rxPin, txPin, pttPin, pttInverted)
-RH_ASK driver = RH_ASK(4000, D2, D1, D1, false);
+RH_ASK driver = RH_ASK(1000, D2, D1, D1, false);
 
 // Wireless configuration.
 char wifiName[EEPROM_WIFI_NAME_LENGTH] = {0};

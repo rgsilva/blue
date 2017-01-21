@@ -27,7 +27,7 @@
 
 // Radio driver
 // RH_ASK(speed = 2000, rxPin = 11, txPin = 12, pttPin = 10, pttInverted = false)
-RH_ASK driver = RH_ASK(4000, 11, 4, 10, false);
+RH_ASK driver = RH_ASK(1000, 11, 4, 10, false);
 
 // Data packet structure
 typedef struct {
