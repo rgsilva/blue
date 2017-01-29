@@ -75,11 +75,11 @@ void loop() {
       Serial.print(String(packet.seq));
       Serial.print(", value=");
       Serial.println(String(packet.value));
-    }
 
-    // If connected, send the data to the server.
-    if (WiFi.status() == WL_CONNECTED) {
-      wifiSendData(String(packet.value));
+      // If connected, send the data to the server.
+      if (WiFi.status() == WL_CONNECTED) {
+        wifiSendData(String(packet.value));
+      }
     }
   }
 
