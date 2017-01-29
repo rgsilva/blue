@@ -43,7 +43,9 @@ namespace WaterMeter_Config_Tool
         {
             this.serialPort.Write("?");
 
+            this.serialPort.ReadTimeout = 3000;
             this.txFirmwareVersion.Text = GetResponse();
+            this.serialPort.ReadTimeout = -1;
         }
 
         private void ReadConfig()
@@ -157,6 +159,13 @@ namespace WaterMeter_Config_Tool
         {
             try
             {
+                if (this.serialPort != null)
+                {
+                    this.serialPort.Close();
+                    this.serialPort.Dispose();
+                    this.serialPort = null;
+                }
+
                 this.serialPort = new SerialPort(this.cbSerialPort.Text, 115200);
                 this.serialPort.NewLine = "\n";
                 this.serialPort.DataReceived += serialPortDataReceived;
@@ -170,6 +179,15 @@ namespace WaterMeter_Config_Tool
             }
             catch (Exception e)
             {
+                if (this.serialPort != null)
+                {
+                    if (this.serialPort.IsOpen)
+                    {
+                        this.serialPort.Close();
+                    }
+
+                    this.serialPort.Dispose();
+                }
                 this.serialPort = null;
                 this.Log("- Error: " + e.Message);
             }
