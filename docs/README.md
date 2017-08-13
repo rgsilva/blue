@@ -1,4 +1,6 @@
-# Blue
+<p style="text-align: center;">
+  <img align="center" src="https://github.com/rgsilva/blue/raw/master/docs/logo.small.png" />
+</p>
 
 O Blue é um protótipo de projeto para um sensor de consumo de água. O conceito do projeto foi criado pela [Juliana Scarpin](github.com/scarpinjuliana) e um protótipo de hardware e software foi implementado pelo [Ricardo Gomes](github.com/rgsilva).
 
