@@ -1,4 +1,4 @@
-# Blue Water Meter
+# Blue
 
 ## Playground
 
