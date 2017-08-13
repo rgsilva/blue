@@ -1,6 +1,6 @@
-# Blue Water Meter
+# Blue
 
-O Blue Water Meter é um protótipo de projeto para um sensor de consumo de água. O conceito do projeto foi criado pela [Juliana Scarpin](github.com/scarpinjuliana) e um protótipo de hardware e software foi implementado pelo [Ricardo Gomes](github.com/rgsilva).
+O Blue é um protótipo de projeto para um sensor de consumo de água. O conceito do projeto foi criado pela [Juliana Scarpin](github.com/scarpinjuliana) e um protótipo de hardware e software foi implementado pelo [Ricardo Gomes](github.com/rgsilva).
 
 # Disclaimer
 
